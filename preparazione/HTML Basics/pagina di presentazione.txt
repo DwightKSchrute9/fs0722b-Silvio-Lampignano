@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <title>Pagina di presentazione</title>
+</head>
+<body>
+    <h1>Silvio Lampignano</h1>
+    <h2>Just another luminous spiritual being having a beautiful and difficult human experience</h2>
+</body>
+
+<ul>
+    <li>Mail: silviolampignano@gmail.com</li>
+    <li>Phone:+393315971862</li>
+    <li>Social: SILVIOMARIAMARCELO (IG)</li>
+</ul>

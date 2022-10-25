@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+#main {
+    width: 100%;
+}
+
+#content {
+    height: 100%;
+
+}
+#sidebar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar-icon {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.sidebar-icon p {
+    margin: 0;
+    
+}
+
+.sidebar-icon ion-icon {
+    font-size: 1.5em;
+}
+
+#topbar {
+    height: 8vh;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#logo {
+    height: 50%;
+    
+
+}
+
+#search-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+    
+} 
+
+#topbar-icons {
+    display: flex;
+    cursor: pointer;
+}
+
+.topbar-icon ion-icon {
+    font-size: 2em;
+    padding: 0 0.3em;
+
+}
+
+#mic-icon {
+    margin: 0 0.5em;
+}
+
+#mic-icon ion-icon {
+    font-size: 1.7em;
+
+}
+
+#search-btn {
+    padding: 0 0.6em;
+    font-size: 1.3em;
+    display: flex;
+    align-content: center;
+
+}
+
+#content{
+    width: 900px;
+    display: flex;
+    flex-flow: wrap;  
+}
+
+#first-line {
+    display: flex;
+}
+
+#second-line {
+    display: flex;
+}
+
+#card {
+    
+    display: flex;
+    padding: 1em;
+}
+
+#TITOLO {
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+
+
+

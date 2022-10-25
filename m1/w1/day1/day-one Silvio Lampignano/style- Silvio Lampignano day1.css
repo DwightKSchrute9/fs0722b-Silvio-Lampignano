@@ -1,0 +1,25 @@
+
+
+#main {
+    padding: 2em;
+}
+#foto-profilo {
+    display: flex;
+    padding: 2em;
+}
+#calendar {
+    padding: 0.5em;
+    display: flex;
+}
+#smartphone {
+    display: flex;
+    padding: 0.5em;
+}
+#whatsapp {
+    display: flex;
+    padding: 0.5em;
+}
+p{
+    display: flex;
+    flex-wrap: wrap;
+}

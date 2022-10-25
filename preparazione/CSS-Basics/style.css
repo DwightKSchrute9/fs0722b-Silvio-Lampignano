@@ -1,0 +1,73 @@
+
+
+.mainsection {
+    padding: 20px;
+}
+
+.image-container {
+    height: 500px;
+
+}
+h1 {
+    font-family: "Prata";
+    font-weight: 400;
+    font-size: 64px;
+    margin-bottom: 0;
+}
+h3 {
+    font-family: "Prata";
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+body {
+    font-family: "Montserrat";
+    background-image: url(https://i.pinimg.com/originals/ee/cf/87/eecf8749c9a4e1d1810cc0354a6c60fb.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    
+}
+
+/*unvisited link */
+a:link {
+    color: red;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h6 {
+    padding: 22px;
+    margin-bottom: 0px;
+    margin-top: 56px;
+    color: aliceblue;
+    border-radius: 6px;
+    background: linear-gradient(to right, #6699ff 0%, #ff99cc 100%);
+   }
+
+    
+ ul {
+    padding: 0px;
+    list-style-type: georgian;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    border-bottom-color: #dfdfdf;
+    border-bottom: 1px;
+   }
+   
+   
+   .centrato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   footer{
+    color: black;
+    padding: 16px;
+   }
+
+  
