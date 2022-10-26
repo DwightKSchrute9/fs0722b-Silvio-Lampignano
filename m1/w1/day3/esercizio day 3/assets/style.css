@@ -1,5 +1,4 @@
 
-
     
 <!-- Parte relativa all'Header -->
 
@@ -21,15 +20,6 @@ header {
     border-bottom: 1px solid #eddd03a9;
     padding-bottom:20px;
 }
-
-#div_line_center {
-    display: flex;
-    padding: 0em;
-    border-bottom: 1px solid #cad3e2a9;
-    padding-bottom:20px;
-
-}
-
 
 #caption {
     display: flex;
@@ -59,24 +49,26 @@ header {
 }
 
 #under_image {
-    border-left: 1px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    align-content: center;
+    align-items: center;
     padding: 1em;
     color: rgba(220, 150, 19, 0.723);
 
 }
 
-#ingredients {
+.corpo {
     display: flex;
-    justify-content: center;
-}
-
-#corpo {
+    flex-direction: column;
+    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+#div_line_end {
+    display: flex;
+    padding: 0em;
+    border-bottom: 1px solid #4073cca9;
+    padding-bottom:20px;
+
 
 
 
