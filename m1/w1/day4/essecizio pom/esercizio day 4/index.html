@@ -8,48 +8,48 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d3ef928642.js" crossorigin="anonymous"></script> 
     <title>Layout articolo clone</title>
 </head>
 <body>
 
     <header>
-
-
         <div>
             <img src="logo.svg" alt="logo" width="250px" height="60px">
             <p>EPICODE -IL BLOG DEI DEVELOPERS</p>
         </div id="menu">
             <ul id="ul"></ul>
-                <li> <a rel="aaaa"</a>HOME</li>
+                <li>HOME</li>
                 <li>ARTICOLI</li>
                 <li>LAVORA CON NOI</li>
             </ul>
-
-
         </header>
+        
         <main>
-
-            
-                <h1>Come creare un template per i post</h1>
-                <div>
-                <h2> di Mario Rossi - pubblicato il 05/10/2020 <h2>
+            <h1>Come creare un template per i post</h1>
+            <div>
+                <h2><i class="fa-duotone fa-clock"></i> di Mario Rossi - pubblicato il 05/10/2020 <h2>
                 </div>
                 <div>
-            <h3>La prima cosa da fare e' suddividere in blocchi logici la pagina, identificando le <strong> parti comuni</strong> da applicare a tutte le pagine <br> Le varie aree saranno suddivise quindi in: <br></h3>
+            <h3>La prima cosa da fare e' suddividere in blocchi logici la pagina, identificando le <b id="viola">parti comuni</b>da applicare a tutte le pagine </h3>
+            <span>
+                <p> Le varie aree saranno suddivise quindi in:</p> 
+            </span>
                 <ul>
-                    <li>Contenuti di intestazione del tag </li>
-                    <li>Contenuti centrali variabili del tag (corpo principiale)</li>
-                    <li>Contenuti di fine pagina comuni, da inserire nel tag</li>
+                    
+                    <li>Contenuti di intestazione del tag Header</li>
+                    <li>Contenuti centrali variabili del tag main(corpo principiale)</li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag footer</li>
                 </ul>
-                <h4>Formattazione del codice <br> Il testo dell'articolo dovra' essere formattato per identificare tutte le parti da <b>selezionare con il CSS</b> Percio i passi saranno:</h4>
+                <h4>Formattazione del codice <br> Il testo dell'articolo dovra' essere formattato per identificare tutte le parti da <b id="viola"> selezionare con il CSS</b> Percio i passi saranno:</h4>
                 <ol>
                     <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tasto appropriato</li>
                     <li>Scrivere l'Html dai tag esterni a quelli interni e dall'alto verso il basso</li>
                     <li>Applicare gli stili CSS</li
                 </ol>
                 <table>
-                    <caption><b>Diffusione dei Css</b></caption>
+                    <p>Diffusione dei Css</p> 
                         <tr><td><strong>Anno</strong></td><td><strong>%di utilizzo </strong></td><td><strong> Supporto Browser</strong></td></tr>
                         <tr><td>2000</td><td>20%</td><td>17%</td></tr>
                         <tr><td>2002</td><td>35%</td><td>22%</td></tr>
@@ -62,15 +62,13 @@
         
                 <hr>
 
-                <div class="sezioni">
-                    <h5>Un test di valutazione potra' essere fatto attraver il <a href:"Tool online"></a>Tool online.<br>Una volta ottimizzato il tutto avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro</h5>
-                    <iframe width="420" height="315"
-         src="https://www.youtube.com/embed/dvOvHXruEDM" allowfullscreen>
-        </iframe>
+                <div class="sezionevideo">
+                    <h5>Un test di valutazione potra' essere fatto attraverso il <a href:""></a>Tool online.<br>Una volta ottimizzato il tutto avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro</h5>
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/dvOvHXruEDM" allowfullscreen> </iframe>
     </div>
 
-            <DIV id="FORM">
-            <h2>Novità</h2>
+            <DIV class="form">
+            <p>NOVITA'<p>
             <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla newsletter:</p>
             <hr>
             <form action="/action_page.php">
@@ -80,27 +78,33 @@
               </form> 
             </DIV> 
 
-            <DIV id="ARTICOLI CORRELATI">
-            <h2>Articoli Correlati</h2>
-              <a href="https://validator.w3.org/">Validare il codice Html</a>
-              <p>Categoria:Develop <br>DATA: 18/07/2020</p>
-              <a href="https://toolset.mrw.it/html/html-fixer.html">Correggere la Sintassi</a>
-              <p>Categoria:Develop <br>DATA: 18/07/2020</p>
-              <a href="https://www.resizepixel.com/it/reduce-image-in-kb/">Meno Kb nella Pagina</a>
-              <p>Categoria:Develop <br>DATA: 18/07/2020</p>
+            <DIV>
+            <p>Articoli Correlati<p>
+                <div class="form">
+                    <a href="https://validator.w3.org/">Validare il codice Html</a>
+                    <p>Categoria:Develop <br>DATA: 18/07/2020</p>
+                </div>
+                <div class="form">
+                    <a href="https://toolset.mrw.it/html/html-fixer.html">Correggere la Sintassi</a>
+                    <p>Categoria:Develop <br>DATA: 18/07/2020</p>
+
+                </div>
+                <div class="form">
+                    <a href="https://www.resizepixel.com/it/reduce-image-in-kb/">Meno Kb nella Pagina</a>
+                    <p>Categoria:Develop <br>DATA: 18/07/2020</p>
+                </div>
               <hr>
             </DIV>
         </div>
     </main>
 
         <footer>
-
             <div>
             <H5>Blog Epicode 2O21 &co</H5>
-              <P><i>Testata online di Mario Rossi, registrata con prot. n213/20218 - Via Luigi Einaudi 2 - Milano. P.IVA 00112233. info@epicode.school "</i></a></P>
+            <P><i>Testata online di Mario Rossi, registrata con prot. n213/20218 - Via Luigi Einaudi 2 - Milano. P.IVA 00112233. info@epicode.school "</i></a></P>
             </div>
 
         </footer>   
-
+    
 </body>
 </html>
