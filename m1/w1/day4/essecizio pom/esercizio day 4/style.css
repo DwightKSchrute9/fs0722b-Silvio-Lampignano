@@ -10,9 +10,9 @@ body {
 /* HEADER */
 
 header {
-    width: 868px;
-    height:168px;
-    padding: 1em;
+    width: 100%;
+    height:100%;
+    padding: 0;
     border: 1px;
     border-radius: 0.5rem;
     box-shadow: 20px grey;
@@ -26,15 +26,17 @@ header {
     margin: auto;
     display: flex;
     justify-content: center;
-    
-    
-
 } 
+
+#menu {
+    color: aliceblue;
+    list-style: none;
+}
 
 /* MAIN */
 
 main {
-    width: 868px;
+    width: 100%;
     height:100%;
     border: 1px;
     border-radius: 0.5rem;
@@ -46,7 +48,7 @@ main {
     text-align: justify;
     margin: auto;
     align-items:center;
-    padding:20px;
+    padding:0;
     
     
 }
@@ -88,25 +90,44 @@ p{
 
 
 /* TABELLE */
+
 table {
     width: 100%;
     border-collapse: collapse;
-}
-th, td {
+  }
+  table,
+  th,
+  td {
     border: 1px solid black;
-}
-
+  }
+  thead {
+    background-color: #1c87c9;
+    color: #ffffff;
+  }
+  th {
+    text-align: center;
+    height: 50px;
+  }
+  tbody tr:nth-child(odd) {
+    background: #ffffff;
+  }
+  tbody tr:nth-child(even) {
+    background: #f4f4f4;
+  }
 
 /* FORM */
 
 .sezionevideo {
     padding: 1em;
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 iframe {
     padding: 1.5em;
     border-radius: 3em; 
+    
 }
 
 .form {
