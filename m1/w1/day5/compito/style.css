@@ -1,1 +1,193 @@
-/* Your styles here */
+/* impostazioni generali */
+
+body {
+   color:#393d41;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.65rem;
+   font-size: 1.2rem;
+    
+}
+
+/* Header */
+
+
+#logo {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+
+header{
+    width: 100%;
+    height: 100%;
+    background: black;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+  
+}
+
+/* Main */
+ main {
+    width: 100%;
+    height:100%;
+ }
+
+ #section {
+    background-image: url("banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2em;
+    
+ }
+
+ h1 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    text-align:center;
+    color: #25a2c3;
+    padding: 1em;
+ }
+
+ 
+ h2{
+    font-family: 'Montserrat', sans-serif;;
+    line-height:1.5rem ;
+    font-size: 0.8rem;
+    text-align: center;
+    color:#25a2c3 ;
+    padding:2em ;
+
+ }
+ h3{
+    font-family:'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    padding: 1em;
+    text-align: center;
+
+ }
+
+a{
+    display: block;
+    width: 30%;
+    height: 10%;
+    font-size: 15px;
+    margin: auto;
+    background-color: orangered;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+#img_radius {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20rem;
+}
+
+#block {
+    display: block;
+    background-color: orangered;
+    padding: 2em;
+    border: 2px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    text-align:center;
+    color: white;
+    padding: 1em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    text-align:center;
+    color: white;
+    padding: 1em;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    text-align:center;
+    color: white;
+    padding: 0em;
+
+}
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    line-height: 1.5rem;
+    font-size: 0.6rem;
+    text-align:center;
+    color: white;
+    padding: 0;
+}
+
+article {
+    display:block;
+    padding: 2em;
+    border: #2ee1e3;
+    align-items: center;
+
+}
+
+#imgs.article {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+footer {
+    width: 100%;
+    height:100%;
+    padding: 1em;
+    border: 1px;
+    border-radius: 0.5rem;
+    box-shadow: 20px grey;
+    margin: 10px;
+    box-sizing: content-box;
+    background-color: rgb(0,160,198);
+    background: linear-gradient(180deg, rgba(0,160,198,1)0% , rgba(3,109,134,1)68%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#Copyright {
+    border-top: #393d41 1px solid;
+
+}
+
+
+
+#contattaci {
+    padding: 0.5;
+
+}
+
+ul {
+    list-style: none;
+}
