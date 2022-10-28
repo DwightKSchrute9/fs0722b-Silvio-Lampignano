@@ -145,10 +145,12 @@ article {
 
 }
 
-#imgs.article {
+#imgsarticle {
     width: 50%;
     display: flex;
     justify-content: center;
+    padding-inline-start: 25%;
+
 
 
 
