@@ -1,7 +1,6 @@
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 var x =2 ;
@@ -14,7 +13,6 @@ var y =8 ;
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 var x =3
@@ -28,14 +26,22 @@ if ( x == y) {
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+var risultato = ( 5 % 2);
+document.write ('Risultato:' + 'risultato');
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+var num1 = 8;
+var num2 = 16;
+if (num1 || num2) = 8;
+console.log()
+
 
 
 
@@ -47,6 +53,14 @@ if ( x == y) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var totalShoppingCart =50 ||total Shopping;
+var ship = 10;
+if (totalShoppingCart => 50){
+  ("La spedizione e' gratuita !")
+}else {("La spedizione ha un costo di 10")
+function ( totalShoppingCart || total Shopping= {ship + total Shopping} ) = Ammontare Totale
+}
+
 
 
 /* ESERCIZIO 6
@@ -55,6 +69,14 @@ if ( x == y) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+var totalShoppingCart = 'totale spesa';
+var bfriday = -20% ;
+
+function ('totale spesa' - 'bfriday')= 
+console.log (Ammontare Totale)
+
+
+
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -63,6 +85,12 @@ if ( x == y) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+ 
+var valore1 = 10;
+var valore2 = 20;
+var valore3 = 30;
+
+if (valore1 = 10) {(valore1 = valore3)}
 
 
 /* ESERCIZIO 8
@@ -71,6 +99,12 @@ if ( x == y) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var stringa = 'ciao'
+var number = 1,2,3,4,5,6,7,8,9,
+
+if (stringa = number)
+typeof false //return bolean
+
 
 
 /* ESERCIZIO 9
@@ -78,6 +112,12 @@ if ( x == y) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+var numero = 10;
+var risultato = (numero % 2);
+
+if (risultato > 0) alert('Numero dispari!');
+else alert('Numero pari!');
 
 
 /* ESERCIZIO 10
