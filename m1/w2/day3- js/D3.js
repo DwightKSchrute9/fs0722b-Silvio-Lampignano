@@ -22,17 +22,25 @@ document.write('Il numero piu\' altro e\''+highest);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log (5 != 10);
+//expected output: true
+
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+var risultato = (10 % 5);
+document.write('Risultato: ' + risultato);
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+var x =2 ; y = 6 ;
+alert = ( x + y )
+//expected alert is 8
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -41,6 +49,12 @@ document.write('Il numero piu\' altro e\''+highest);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+var totalShoppingCart =
+
+if { 
+
+}else 
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
@@ -57,17 +71,39 @@ document.write('Il numero piu\' altro e\''+highest);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var x =3 ;
+var y =6 ;
+var z =1 ;
+
+let numero = [ y, x ,z]
+if ( y > x > z) {
+  console.log ('true')
+}
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+// numero da verificare
+var numero = 10;
+
+// calcolo il modulo di 2
+var risultato = (numero % 2);
+
+// verifico il risultato dell'operazione
+// se il risultato è maggiore di zero il numero è dispari
+if (risultato > 0) alert('Numero dispari!');
+// in caso contrario è pari
+else alert('Numero pari!');
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
