@@ -1,0 +1,45 @@
+body {
+    background-color: green;
+}
+
+header{
+    display: block;
+    width: 100%;
+    height: 16vh;
+    text-align: center;
+    
+}
+
+h1 {
+    padding: 0.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    color: antiquewhite;
+}
+
+a {
+    display: block;
+    width: 30%;
+    height: 10%;
+    font-size: 15px;
+    margin: auto;
+    background-color: orangered;
+    border-radius: 0.5rem;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    
+}
+
+iframe {
+    width: 95%;
+    display: block;
+    align-content: center;
+    padding-inline-start: -20%
+}
