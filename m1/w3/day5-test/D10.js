@@ -86,9 +86,6 @@ function whoIsBigger(number1,number2){
 }
 //console.log(whoIsBigger(158,159));
 
-
-
-
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
@@ -373,7 +370,7 @@ function deleteProp(object,parameter) {
   }
 
 
-console.log(deleteProp(TwoGames[0],"Year"));
+//console.log(deleteProp(TwoGames[0],"Year"));
 
 
 /* ESERCIZIO 12
@@ -388,67 +385,176 @@ function newestMovie() {
   }
   return newest;
 }
-console.log(newestMovie());
+//console.log(newestMovie());
 
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
 */
 
+function countMovies(){
+ let count = movies.length;
+ return count;
+}
+//console.log(countMovies());
+ 
+    
 /* ESERCIZIO 14
   Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film contenuti nell'array "movies" fornito.
 */
+  
+function onlyTheYears() {
+  const array = [];
+  for (let i = 0; i < movies.length; i++) {
+    array.push(movies[i].Year);
+  }
+  return array
+}
+//console.log(onlyTheYears()) 
 
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
 */
+function onlyInLastMillennium() {
+  let array = [];
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].Year < '2000') {
+      array.push(movies[i])
+    }
+  }
+
+  return array ;
+}
+//console.log(onlyInLastMillennium())
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
+function sumAllTheYears() {
+  let sum = 0;
+  for (let i = 0; i < movies.length; i++) {
+    sum += parseInt(movies[i].Year);
+
+  }
+return sum ;
+}
+//console.log(sumAllTheYears());  
+
+
 
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
 
+  function searchByTitle(string){
+    for(var i = 0; i < movies.length; i++) {
+      if(movies[i].search(Title) > -1){
+        return i;
+      }
+    }
+    return -1;
+  }
+  console.log(searchByTitle)
+
+  
+
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
+//function searchAndDivide
 
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
+function removeIndex(number) {
+  const array = [...movies];
+  array.splice(number, 1);
+  return array;
+}
+//console.log(removeIndex(3))
+
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
+
 
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
+function getContainer() {
+  return document.getElementById ("container")
+
+}
+//console.log(getContainer())
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+function td (){
+  return document.getElementsByTagName ('td')
+}
+//console.log(td())
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
+function stamp (){
+  var tds = td()
+  for(i=0 ;i < tds.length;i++)
+  {
+    console.log(tds[i].innerHTML)
+  }
+  
+}
+stamp ()
 
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
-
+function colorbg (){
+  var links = document.getElementsByTagName ('a');
+  for(i=0;i < links.length; i++){
+    links[i].style.backgroundColor='red'
+  }
+}
+colorbg()
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+function addElement(){
+ var ul = document.getElementById("myList");
+ var li = document.createElement('li');
+ var text = document.createTextNode('list item content');
+ li.appendChild(text);
+    ul.appendChild(li);
+}
+
+addElement ()
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
+function deleteElements(){
+  var ul = document.getElementById("myList");
+  ul.innerHTML = "";
+}
+
+deleteElements()
+
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+function addTestClass(){
+  var trs =document.getElementsByTagName('tr')
+  for (i=0 ; i < trs.length; i++){
+    trs[i].classList.add("test");
+  }
+}
+addTestClass()
+
+
+
 
 // [EXTRA] JS Avanzato
 
