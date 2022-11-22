@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="lista">
+
+</div>
+<button id="crea">Crea</button>
+<button id="elimina">Elimina</button>
+
+   <script>
+    let crea = document.querySelector ('#crea');
+
+    let arrayDiv = [];
+//creo tutti i bottoni
+    crea.addEventListener('click',function() {
+
+        let div = document.createElement('div');
+        let div2 = document.createElement('div');
+        let divText = document.createTextNode ('Div Creato');
+        //div.textContent = ('Div creato');
+
+        arrayDiv.push(div);
+
+
+        div.append(divText);
+        let lista =document.querySelector ('#lista').append (div);
+
+        div.addEventListener ('click',function(){
+            div.remove();
+        })
+    });
+
+
+
+
+    
+
+//elimino tutti i bottoni
+    let elimina= document.querySelector ('#elimina');
+    elimina.addEventListener ('click',function(){
+
+
+   
+   //     let arrayDiv = document.querySelectorAll ('#lista > div');   
+    for(let el of arrayDiv){
+        el.remove();
+    }
+    arrayDiv = [];// se ho creato la variabile globale conviene anche svuotare l'array
+})
+
+
+
+   </script> 
+</body>
+</html>

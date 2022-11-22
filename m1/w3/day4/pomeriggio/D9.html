@@ -79,13 +79,12 @@
        Scrivi una funzione per cambiare il contenuto di tutti i p che sono discendenti di un div.
       */
 
-      const changePcontent = function (newPcontent) {
-        const addParagraph = document.querySelectorAll ('p')
-        addParagraph.innerHtml =newPcontent
+      const changePcontent = function () {
+       
       
       
         //
-        changePcontent ('Contenuto cambiato')
+        
       }
 
       /* ESERCIZIO 4
@@ -109,7 +108,11 @@
       */
 
       const addParagraph = function (content) {
+        const addParagraph = document.querySelector ('div')
+        addParagraph.innerHtml = newPcontent
+      
         //
+        addParagraph ('Nuovo Paragrafo')
       }
 
       /* ESERCIZIO 7

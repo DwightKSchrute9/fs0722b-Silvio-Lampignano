@@ -18,7 +18,7 @@ var y =8 ;
 var x =3
 var y =5;
 if ( x == y) {
-  console.log ()
+  console.log ('not equal')
 }
 
 
@@ -39,8 +39,10 @@ document.write ('Risultato:' + 'risultato');
 
 var num1 = 8;
 var num2 = 16;
-if (num1 || num2) = 8;
-console.log()
+if (num1 ==8 || num2==8) {
+ console.log('risultato 8')
+} ;
+
 
 
 
@@ -51,7 +53,7 @@ console.log()
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
 
 var totalShoppingCart =50 ||total Shopping;
 var ship = 10;
@@ -68,7 +70,7 @@ function ( totalShoppingCart || total Shopping= {ship + total Shopping} ) = Ammo
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA 
 var totalShoppingCart = 'totale spesa';
 var bfriday = -20% ;
 
@@ -97,7 +99,7 @@ if (valore1 = 10) {(valore1 = valore3)}
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* SCRIVI QUI LA TUA RISPOSTA *
 
 var stringa = 'ciao'
 var number = 1,2,3,4,5,6,7,8,9,
@@ -116,8 +118,8 @@ typeof false //return bolean
 var numero = 10;
 var risultato = (numero % 2);
 
-if (risultato > 0) alert('Numero dispari!');
-else alert('Numero pari!');
+if (risultato > 0) ('Numero dispari!');
+else ('Numero pari!');
 
 
 /* ESERCIZIO 10

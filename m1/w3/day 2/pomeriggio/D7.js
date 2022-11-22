@@ -12,16 +12,31 @@ function nome (f,g) {
 /* ESERCIZIO 2
   Scrivi una funzione per creare un array di soli valori DISPARI da 1 a 100.
  */
-    let Arr = [];
-    for (let i =0 ; i < 100 ; i++){
-      if (i % 2 != 0) {
-        Arr.push (i);
-      }
+
+function valoriDispari(){
+  let valoriDispari = [];
+  for (let i =0 ; i <= 100 ; i++){
+    if (i % 2 != 0) {
+      valoriDispari.push (i);
     }
-    console.log (Arr);
+    return valoriDispari
+  }
+  }  
+  console.log(valoriDispari());
+    
 /* ESERCIZIO 3
   Scrivi una funzione per creare un array di soli valori multipli di 5, da 1 a 100.
  */
+
+  function valoriMultipliDi5(){
+    let arrrayMultipli5 = [];
+    for (let i=0; i <=100 ; i++ ) {
+      if (i % 5 === 0) 
+      arrrayMultipli5.push (i);
+        }
+    return arrrayMultipli5;
+  }
+  console.log(valoriMultipliDi5());
 
 
 

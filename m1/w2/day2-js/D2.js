@@ -16,9 +16,9 @@ REGOLE
  var stringa ='ciao sono Silvio'; //Nella variabile stringa o variabile testuale possiamo inserire un text in questo caso tra due apici 
  var boleano =(true) // Nella variabile boleano possiamo dare dei meccanismi on off con delle semplici parentesi 
  var array = [] //inserendo la lista nelle parentesi quadre
- var object { Nome: 'Marco', Eta: '30' //Nella variabile objects invece utilizziamo le parentesi graffe per inserire una lista di 'coppie chiave valore' separate con le ','
+ var object= { Nome: 'Marco', 
+ Eta: '30' }//Nella variabile objects invece utilizziamo le parentesi graffe per inserire una lista di 'coppie chiave valore' separate con le ','
  
-
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
