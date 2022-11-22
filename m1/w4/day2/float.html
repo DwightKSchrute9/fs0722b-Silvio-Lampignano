@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #000
+        }
+
+        header {
+            background-color: navy;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background-color: blueviolet;
+            height: 30px;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav li {
+            float: left;
+            border-right: 1px solid #fff;
+            padding: 0 90px;
+        }
+
+        /*float rompe la caratteristica di display block e fa fluttuare gli elementi a sx e a dx
+        i tag a cui assegnamo float NON contribuiscono all'altezza del contenitore !*/
+        nav li#ultimo {
+            border-right: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            line-height: 30px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: blueviolet;
+        }
+        main{padding: 15px;}
+        section{
+            margin-left: 300px;margin-right: 300px;
+        }
+        aside {
+            float: left;
+            width: 300px;
+        }
+        #right {float: right; width: 300px;}
+        article img {width: 100px;}
+        
+        section p { 
+            display: inline-block;
+            width: 90%;
+        }
+
+        /*footer*/
+        footer {background-color: blueviolet;color:#fff;text-align: center;clear: both;}
+        footer p {margin: 0;}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!--intestazione-->
+        <header>
+            <h1>Epicode</h1>
+            <nav>
+                <ul>
+                    <li> <a href="#"></a>Html</li>
+                    <li> <a href="#"></a>Css</li>
+                    <li> <a href="#"></a>Javascrip</li>
+                    <li> <a href="#"></a>Typescript</li>
+                    <li id="ultimo"> <a href="#"></a>Angular</li>
+                </ul>
+
+            </nav>
+        </header>
+        <!--corpo centrale-->
+        <main>
+            <aside id="left">
+                    <img src="clipart-apple-mango-13.png" width="300px" height="200px"  alt="#"><BR>
+                    <img src="clipart-apple-mango-13.png" width="300px" height="200px"  alt="#">
+            </aside>
+            <aside id="right">
+                <img src="clipart-apple-mango-13.png" width="300px" height="200px"  alt="#"><BR>
+                <img src="clipart-apple-mango-13.png" width="300px" height="200px"  alt="#">
+            </aside>
+            <section>
+                <p>
+                    <img src="clipart-apple-mango-13.png" width="150px" height="100px">
+                    Cake tootsie roll tiramisu tart biscuit gingerbread apple pie. Marshmallow sweet caramels pie ice
+                    cream gummies sesame snaps croissant. Gingerbread topping dessert ice cream cheesecake brownie lemon
+                    drops sweet dessert. Muffin gummies jujubes chupa chups pie muffin donut icing brownie. Sesame snaps
+                    sweet roll cotton candy dessert brownie gummi bears oat cake wafer. Oat cake dessert chocolate bar
+                    cookie cookie toffee jelly beans marshmallow biscuit.</p>
+
+                <p>
+                    <img src="clipart-apple-mango-13.png" width="150px" height="100px">
+                     Donut jelly chocolate muffin sesame snaps sesame snaps. Dessert tootsie roll cookie caramels
+                    lollipop. Cupcake cupcake sweet croissant halvah wafer. Icing sugar plum biscuit tootsie roll
+                    cupcake carrot cake lollipop muffin. Lemon drops cupcake ice cream tart cookie. Powder jelly-o
+                    tootsie roll gummi bears shortbread lollipop tootsie roll cotton candy jelly-o. Caramels pastry
+                    macaroon marzipan sweet. Cotton candy sweet sweet roll biscuit pudding pudding.</p>
+                <p>
+                    <img src="clipart-apple-mango-13.png" width="150px" height="100px">
+                     Croissant chocolate cake halvah ice cream apple pie. Danish sugar plum tiramisu halvah jelly beans.
+                    Cake cake cotton candy liquorice donut marshmallow tart gummies. Liquorice jelly beans dessert
+                    pastry oat cake tootsie roll biscuit powder. Oat cake cake danish chupa chups cotton candy topping
+                    bonbon halvah shortbread. Macaroon carrot cake lollipop jelly chocolate cake dessert sesame snaps.
+                    Sesame snaps tart carrot cake pie jelly beans jelly-o gingerbread.</p>
+                    <p>
+                        <img src="clipart-apple-mango-13.png" width="150px" height="100px">
+                         Croissant chocolate cake halvah ice cream apple pie. Danish sugar plum tiramisu halvah jelly beans.
+                        Cake cake cotton candy liquorice donut marshmallow tart gummies. Liquorice jelly beans dessert
+                        pastry oat cake tootsie roll biscuit powder. Oat cake cake danish chupa chups cotton candy topping
+                        bonbon halvah shortbread. Macaroon carrot cake lollipop jelly chocolate cake dessert sesame snaps.
+                        Sesame snaps tart carrot cake pie jelly beans jelly-o gingerbread.</p>
+                        <p> 
+                            <img src="clipart-apple-mango-13.png" width="150px" height="100px">
+                            Croissant chocolate cake halvah ice cream apple pie. Danish sugar plum tiramisu halvah jelly beans.
+                            Cake cake cotton candy liquorice donut marshmallow tart gummies. Liquorice jelly beans dessert
+                            pastry oat cake tootsie roll biscuit powder. Oat cake cake danish chupa chups cotton candy topping
+                            bonbon halvah shortbread. Macaroon carrot cake lollipop jelly chocolate cake dessert sesame snaps.
+                            Sesame snaps tart carrot cake pie jelly beans jelly-o gingerbread.</p>
+                
+
+            </section>
+            
+        </main>
+        <footer> <p>Footer</p></footer>
+    </div>
+
+</body>
+
+</html>
