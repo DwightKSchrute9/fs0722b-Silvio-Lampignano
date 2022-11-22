@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        .container{
+            width: 1024px;
+            margin: 0 auto;
+            border: 2px solid #000;
+            position: relative;
+            height: 800px;
+        }
+        .container div {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+
+        }
+        #rosso {background: red; top: 20px; left: 20px; z-index: 4;}
+        #blue {background: blue; top: 40px; left: 40px; z-index: 3;}
+        #verde { background: green;top: 60px; left: 60px; z-index: 2;}
+        #yellow {background: yellow; top: 80px; left: 80px; z-index: 1;}
+
+        img {position: absolute;left: 0; top: 0; z-index: -1;}
+        /*valori possibili
+        auto -> valore di default (uguale a tutti i parents)
+        numero -> qualsiasi numero intero positivo o negativo
+        initial -> valore di default (0)
+        inherit -> ereditato dal genitore
+        */
+
+    </style>
+</head>
+<body>
+    <H2>La proprieta Z-Index</H2>
+    <!--
+    <div class="container">
+        <div id="rosso"><code>z-index</code></div>
+        <div id="blue"></div>
+        <div id="verde"></div>
+        <div id="yellow"></div>
+    </div>
+    -->
+    <img src="clipart-apple-mango-13.png" alt="">
+    <p>siccome l'immagina ha z Z-Index -1 verra posizionata sotto</p>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute</title>
+    <style>
+        div.relative {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #f00;
+        }
+        div.absolute {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #00f;
+        }
+        div.absolute_2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 300px;
+            height: 100px;
+            border: 3px solid #0f0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Position Absolute</h2>
+    <p>Un elemento ha <code> Position: absoulute</code> si posiziona relativamente al suo ancestor (genitore piu' vicino)</p>
+    <p>Se un div con position:absolute ha ancestor usa il <code> body </code> come genitore piu vicino</p>
+    <div class="relative">
+        Questo div rosso ha una position relative
+    <div class="absolute">
+        Questo div ha una position absolute
+    </div>
+    <div class="absolute_2">
+        Questo div ha una position absolute
+    </div>
+
+    
+</body>
+</html>
