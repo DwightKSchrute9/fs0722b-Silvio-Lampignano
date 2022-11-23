@@ -1,0 +1,24 @@
+article{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+    background-color: #fef7e2;
+    border-radius: 30px;
+    padding: 30px;
+
+}
+body{
+    padding: 90px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+}
+
+article img{
+    flex: 1 1 500px;
+    overflow: hidden;
+    object-fit: cover;
+}
+article #article_text{
+    flex: 1 1 400px;
+    line-height: 1.4;
+}
