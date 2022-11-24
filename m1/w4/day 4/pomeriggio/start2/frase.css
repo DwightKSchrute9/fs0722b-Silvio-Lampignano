@@ -15,47 +15,32 @@
     font-family: 'Bree Serif', serif;
     padding: 12px 100px 12px 12px;
 }
-.parole {
+
+p {
+    text-shadow: 1px 1px 1px rgba(146,146,146,0.8);
+}
+.parole i{
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    animation: AlternateText 6s linear infinite 0s;
     color: rgb(80, 149, 201);
 }
+parole i:nth-child(2) {
+    animation-delay:2s ;
+    color: #6b889d;
 
-#a {
-    position: absolute;
-    right: 900px;
-    bottom: 600px;
-    animation-name: animation;
-    animation-duration: 6s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    }
-#b{
-    position: absolute;
-    right: 900px;
-    bottom: 600px;
-    animation-name: animation;
-    animation-duration: 6s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    opacity: 0;
 }
-#c {
-    position: absolute;
-    right: 900px;
-    bottom: 600px;
-    animation-name: animation;
-    animation-duration: 6s;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    opacity: 0;
+parole i:nth-child(3) {
+    animation-delay:4s ;
+    color: #6b739d;
+    
 }
-
-@-webkit-keyframes animation {
-    0% {color: white;opacity: 0;}
-    16% {transform: translateY(30px);color: white; opacity: 1;}
-    33% {transform: translateY(60px);color:white;opacity: 0;}
-    100% {transform: translateY(0.0);opacity: 0;}
-
+@keyframes AlternateText {
+    0% {opacity: 0;}
+    2%{opacity: 0 ;transform: translateY(-30px);}
+    5%{opacity: 1 ;transform: translateY(0px);}
+    17%{opacity: 1 ;transform: translateY(0px);}
+    20%{opacity: 0 ;transform: translateY(30px);}
+    100%{opacity: 0 }
 }
