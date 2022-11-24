@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trasformazioni</title>
+    <style>
+        div.a {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: rotate(45deg);
+
+        }
+        div.b{
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: skew(-20deg,-20deg); /*skewX| SKEWy */
+        }
+        div.c{
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: scale(0.5, 1.5); /*scaleX | scaleY */
+
+        }
+        #box {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            transform: rotate(45deg) scale(0.3) skew(-50deg);
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Proprieta trasform</h2>
+    <h2>transoform rotate</h2>
+    <div class="a">rotate</div>
+    <h2>Transform skew</h2>
+    <div class="b">Skew</div>
+    <h2>Transform scale</h2>
+    <div class="c">Scale</div>
+    <div id="box">Box</div>
+</body>
+</html>
