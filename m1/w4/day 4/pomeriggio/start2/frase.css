@@ -19,8 +19,43 @@
     color: rgb(80, 149, 201);
 }
 
-.parole .i {
-    transition-property: op ;
-    transition-duration: 2s;
-    transition-timing-function: linear;
+#a {
+    position: absolute;
+    right: 900px;
+    bottom: 600px;
+    animation-name: animation;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    }
+#b{
+    position: absolute;
+    right: 900px;
+    bottom: 600px;
+    animation-name: animation;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+#c {
+    position: absolute;
+    right: 900px;
+    bottom: 600px;
+    animation-name: animation;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+@-webkit-keyframes animation {
+    0% {color: white;opacity: 0;}
+    16% {transform: translateY(30px);color: white; opacity: 1;}
+    33% {transform: translateY(60px);color:white;opacity: 0;}
+    100% {transform: translateY(0.0);opacity: 0;}
+
 }
