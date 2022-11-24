@@ -15,7 +15,7 @@ body{
 .linea_1 {display: flex;}
 .linea_2 {display: flex;}
 
-.postit_1{ width: 450px; height: 200px;background-color: rgb(241, 222, 222); margin:10px; transform: rotate(-15deg); animation: mymove linear 2s ; text-align: center; padding-top: 100px;}
+.postit_1{ width: 450px; height: 200px;background-color: rgb(241, 222, 222); margin:10px; transform: rotate(-15deg); animation: mymove linear 2s ; text-align: center; padding-top: 100px;opacity: 0.7;}
 .postit_1:hover{
     box-shadow: 2px 2px 10px  #000;
     text-shadow: 1px 1px 1px #000;
@@ -29,7 +29,7 @@ body{
     transform:scale(1.1) rotate(8deg);
    
 }
-.postit_3{ width: 450px; height: 200px;background-color: rgb(155, 165, 225); margin:10px; transform: rotate(-15deg); animation: mymove linear 2s;text-align: center;padding-top: 100px;}
+.postit_3{ width: 450px; height: 200px;background-color: rgb(155, 165, 225); margin:10px; transform: rotate(-15deg); animation: mymove linear 2s;text-align: center;padding-top: 100px;opacity: 0.7;}
 .postit_3:hover{
     box-shadow: 2px 2px 10px  #000;
     text-shadow: 1px 1px 1px #000;
@@ -42,7 +42,7 @@ body{
     text-shadow: 1px 1px 1px #000;
     transform:scale(1.1) rotate(8deg);
 }
-.postit_5{ width: 450px; height: 200px;background-color: rgb(241, 222, 222); margin:10px; transform: rotate(-15deg); animation: mymove linear 2s;text-align: center;padding-top: 100px;}
+.postit_5{ width: 450px; height: 200px;background-color: rgb(241, 222, 222); margin:10px; transform: rotate(-15deg); animation: mymove linear 2s;text-align: center;padding-top: 100px;opacity: 0.7;}
 .postit_5:hover{
     box-shadow: 2px 2px 10px  #000;
     text-shadow: 1px 1px 1px #000;
@@ -54,7 +54,7 @@ body{
     text-shadow: 1px 1px 1px #000;
     transform:scale(1.1) rotate(8deg);
 }
-.postit_7{ width: 450px; height: 200px;background-color: rgb(241, 222, 222); margin:10px; transform: rotate(-15deg); animation: mymove linear 2s;text-align: center;padding-top:100px;}
+.postit_7{ width: 450px; height: 200px;background-color: rgb(241, 222, 222); margin:10px; transform: rotate(-15deg); animation: mymove linear 2s;text-align: center;padding-top:100px;opacity: 0.7;}
 .postit_7:hover{
     box-shadow: 2px 2px 10px  #000;
     text-shadow: 1px 1px 1px #000;

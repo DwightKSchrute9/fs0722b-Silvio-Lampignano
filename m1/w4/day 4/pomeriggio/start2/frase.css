@@ -19,3 +19,8 @@
     color: rgb(80, 149, 201);
 }
 
+.parole .i {
+    transition-property: op ;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
