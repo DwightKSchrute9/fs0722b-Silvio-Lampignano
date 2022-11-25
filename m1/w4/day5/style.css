@@ -220,3 +220,11 @@ h5{
 .riga1sideb{display: flex;}
 .riga3sideb{display: flex;}
 .riga2sideb{ display: flex;}
+
+.whiteBackground {
+	background-color: white;
+}
+
+.yellowBackground {
+	background-color: #ffc017;;
+}
