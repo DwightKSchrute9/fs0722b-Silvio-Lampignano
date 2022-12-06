@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparate age</title>
+</head>
+
+<body>
+    <script>
+class Person {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	compareAge(otherPerson) {
+		if (this.age > otherPerson.age) {
+			console.log(this.name + ' is older than ' + otherPerson.name);
+		} else if (this.age < otherPerson.age) {
+			console.log(otherPerson.name + ' is older than ' + this.name);
+		} else {
+			console.log(this.name + ' has the same age as ' + otherPerson.name);
+		}
+	}
+}
+
+const pippo = new Person('pippo', 25);
+const pluto = new Person('pluto', 28);
+const paperino = new Person('paperino', 25);
+
+pippo.compareAge(pluto);
+pluto.compareAge(pippo);
+pippo.compareAge(paperino);
+    </script>
+</body>
+
+</html>
