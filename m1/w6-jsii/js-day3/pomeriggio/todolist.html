@@ -27,23 +27,19 @@
     <ul id="myUL">
 
     </ul>
-    <span id="span"></span>
+    <div class="timer"></div>
     </div>
 
 
    <!--seconds timer con js script--> 
     <script>
-        var span = document.getElementById('span');
-
-        function time() {
-            var d = new Date();
-            var s = d.getSeconds();
-
-            span.textContent =
-                ("0" + s).substr(-2);
-        }
-
-        setInterval(time, 1000);
+    var i = (sessionStorage.getItem("count")) ? sessionStorage.getItem("count") : 0;
+    setInterval(conta, 1000);
+    function conta(){
+        i++;
+        document.querySelector(".timer").innerHTML = i + " secondi di sessione aperta";
+        sessionStorage.setItem("count", i);
+    }
     </script>
 
 
