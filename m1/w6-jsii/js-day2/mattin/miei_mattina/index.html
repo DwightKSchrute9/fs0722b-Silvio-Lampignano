@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oggetti</title>
+</head>
+<body>
+    <!--
+        Javascript è un lingiaggio di programmazione 'a oggetti' basati sul concetto di prototipo
+        altri lingiaggi di programmazione sono basati sul concetto di classe -> un oggetto è sempre istanza di una classe
+        -> un oggetto non puo esistere se prima non è stata definita una classe -> creare delle sottoclassi(javascript prototype)
+        ->nei linguaggi tradizionali (java, c#)-> la classe definisce tutte le caratteristichce che puo avere un oggetto
+        -> in javascript possiamo definirealcune caratteristiche e po arricchirlo (protoype) con nuovi metodi e proprieta
+        ECMA 6 -> si introduce class con lo scopo di avvicinare javascript agli sviluppatori che provengono dal altri contesti 
+            -> uniformare gli approcci alla scrittura del codice -> aggiungo la possibilita di definire oggetti a partire da classi
+        una classe è un modo alternativo di definire un costruttore 
+
+    -->
+    <script>
+        class persona {                             // all'interno della classse
+            constructor(nome, cognome){            // definisco il costruttore tramite la keyword constructor
+                this.nome = nome;
+                this.cognome = cognome ;
+                this.emai ="";
+                this.indirizzo ="";
+
+            }
+            mostraNomeCompleto (){
+                return this.nome +"" + this.cognome;
+            }
+        }
+
+        // il costrutto class è una semplificazione sintattica
+        //possiamo creare un nuovo oggetto a partire dalla classe appena definita(operatore new)
+        var marioRossi = newPersona ("Mario", "Rossi");
+        // possiamo anche ottenere valori di proprieta (get) oppure settare valori di proprieta (set)
+    </script>
+</body>
+</html>

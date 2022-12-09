@@ -9,3 +9,15 @@ $(function(){
 		}
 	});
 });
+
+$(function(){
+	$(window).scroll(function(event) {
+		if ($(this).scrollTop() > 200) {
+			$('#getStarted').addClass('greenBackground');
+			$('#getStarted').removeClass('blackBackground');
+		} else {
+			$('#getStarted').addClass('blackBackground');
+			$('#getStarted').removeClass('greenBackground');
+		}
+	});
+});

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        JSON e' lacronimo di javascript object notation -> e' un formato (molto popolare) per lo scambio dei dati
+        JSON non e' stato creato -> si basa sulla notazione letterale degli oggetti(gia ben presente in js)
+        JSON è stato riscoperto / utilizzato come formato per lo scambio di dati specialmente da quando esiste AJAX
+        sintassi d iJSON si origina dagli oggetti letterali in javascript
+
+    --> 
+    <script>
+        var JSON ={
+            proprieta1: 'valore',
+            proprieta2: 'valore',
+            proprieta2: 'valore'
+
+        }
+        //coppie proprieta:valore separate dalla virgola ad eccezione dell'ultima
+        //l'intero oggetto viene racchiuso tra parentesi {}
+        // a differenza della notazione javascccripr:dentro a json ci possono solo essere valori sempplici(no funzioni, no valori complessi)
+        //strnghe, numeri , array, oggetti, true|false, null
+        //esempio 
+        {
+            "home": "Epicode.it",
+            "link": "https://www.epicode.it",
+            "argomento": "Standard del Web",
+            "aree": [
+                
+                {
+                    "area":"CSS",
+                    "url": "https://css.epicode.it"
+                    
+                },
+                {
+                    "area": "jascript",
+                    "url": "https: //javascript.epicode.it"
+                }
+            ]
+        }
+        //inizia con una coppia di parentesi graffe che racchiudono tutta la struttura
+        //seguono le coppie proprieta:Valore che possono contenere valori atomici o altri oggetti attenzione -> [])
+        //json chiede che i valori e le proprieta siano tra ""
+        //per accedere ai valori json.dot notation
+        oggetto.home //Epicode.it
+        oggetto.link //https://www.epicode.it
+        var aree = oggetto.aree //array
+        for (var i = 0;  i< aree.lenght; i += 1){
+            //
+        }
+        //json viene usato da javascript tramite ajax
+        // faccio una richiestsa -> viene restituito loggetto
+        $.aja
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objet log user</title>
+</head>
+<body>
+<input type="text" name="usr" id="usr">
+<input type="password" name="pwd" id="pwd">
+    <button id="entra_btn">Entra</button>
+    <div id="target1"></div>
+    <div id="target2"></div>
+
+    <script>
+        
+        function User (){
+            this.name = '';
+            this.accessID = -1 ,
+                }
+                var EventHandler = {
+                    
+                    User.prototype.userType = {}
+
+            CLICK : 'click',
+            MOUSE_OVER: 'mouseover',      
+            MOUSE_OUT: 'mouseout'        
+        }
+
+        var entra_btn = document.querySelector ("#entra_btn");
+        var usr = document.querySelector ("#usr");
+        var pwd = document.querySelector ("#pwd");
+        var target1 = document.querySelector ("#target1");
+        var target2 = document.querySelector ("#target2");
+
+        entra_btn.addEventListener(EventHandler.CLICK,LogIn) ;
+        usr.addEventListener(EventHandler,MOUSE_OVER,onmouseover);
+
+        
+        function LogIn (e) {
+            if (usr.value == 'user'&& pwd.val)
+        }
+
+
+    </script>
+</body>
+</html>

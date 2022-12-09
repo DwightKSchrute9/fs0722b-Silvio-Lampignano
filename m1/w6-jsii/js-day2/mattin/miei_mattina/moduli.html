@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moduli</title>
+</head>
+
+<body>
+    <!-- Desing pattern
+         schemi che offrono soluzioni a problemi comuni di progettazione del software
+        schemi logici di risoluzione di un problema (riusabili, indipendenti dai linguaggi di programmazione)
+        modelli di riferimento per realizzare componenti di software di facile manutenzione
+        modelli progettuali 
+        pattern creazionali -> singleton pattern -> prevede un'unica istanza di oggetto-> una classe puo essere istanziata solo 1 volta
+        pattern creazionali -> factory patter    ->
+        pattern comportamentali ->observer pattern
+        pattern strutturali  -> module pattern
+        pattern strutturali  -> adapter pattern
+        pattern strutturali  -> facade pattern
+        pattern strutturali  -> MVC/MVMM pattern
+
+        Module pattern (ECMA 5)
+        si basano su dei meccanismi di importazione ed esportazione
+        moduli che saranno contemporaneamente accessibili ed esportabili
+        architettura piu facilmente decifrabile, robusta e gestibile
+    -->
+    <sCRipt>
+        var modulo = {
+            function() { //il nostro modulo a cui assegnamo una IIFE Immediately invoked function
+                function metodoPrivato() {
+                    //
+                }
+                return {             //restituisce un oggetto che ha un metodo pubblico
+                    metodoPubblico: function () {
+                        metodoPrivato()
+                    }
+                }
+
+            }
+        }
+        modulo.metodoPubblico();
+    </sCRipt>
+</body>
+
+</html>
