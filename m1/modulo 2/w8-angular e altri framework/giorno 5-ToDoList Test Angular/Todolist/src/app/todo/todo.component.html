@@ -1,0 +1,33 @@
+
+<nav>
+  <a routerLink="">TODOS</a>
+  <a routerLink="completed">COMPLETED</a>
+</nav>
+<div *ngIf="todos.length === 0; else todoList">
+  Ops, non ci sono task.
+</div>
+
+<form>
+  <input name="todo" *ngModel="todoTitle" value="Nuovo todo" required>
+  <button type="button" (click)="addTodo(todoTitle)">Aggiungi</button>
+  <!--- <button (click)="deleteTodo(id)">Elimina</button></li>-->
+</form>
+
+
+<ng-template #todoList>
+  <ul>
+    <li *ngFor="let todo of todos">
+      {{ todo.title }}
+    </li>
+  </ul>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
