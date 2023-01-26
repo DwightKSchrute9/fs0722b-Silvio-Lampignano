@@ -1,0 +1,26 @@
+<div class="container">
+
+  <img [src]="fuller" alt="Fuller" height="100">
+  <h1 class="display-5">CRUDO - Create, Read, Update, Delete, Orca madonna</h1>
+
+  <a href="#" routerLink="/post/create/" class="btn btn-outline-primary">Crea nuovo post</a>
+
+  <table class="table table-bordered border-primary">
+    <tr>
+      <th>ID</th>
+      <th>Titolo</th>
+      <th>Testo</th>
+      <th width="220px">Azione</th>
+    </tr>
+    <tr *ngFor="let post of posts">
+      <td>{{ post.id }}</td>
+      <td>{{ post.title }}</td>
+      <td>{{ post.body }}</td>
+      <td>
+        <a href="#" [routerLink]="['/post/', post.id, 'view']" class="btn btn-outline-success btn-sm">Mostra</a>
+        <a href="#" [routerLink]="['/post/', post.id, 'edit']" class="btn btn-outline-warning btn-sm">Modifica</a>
+        <button type="button" (click)="deletePost(post.id)" class="btn btn-outline-danger btn-sm">Cancella</button>
+      </td>
+    </tr>
+  </table>
+</div>
